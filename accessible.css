@@ -1,0 +1,17 @@
+.body-accessible {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 35em;
+}
+
+.body-accessible.font-size-120 {
+    font-size: 1.2em;
+}
+
+.body-accessible.font-size-140 {
+    font-size: 1.4em;
+}
+
+.body-accessible p {
+    line-height: 1.75;
+}

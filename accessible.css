@@ -1,17 +1,69 @@
 .body-accessible {
-    font-size: 18px;
-    margin: 0 auto;
-    width: 35em;
+	margin: 50px auto 0;
+	padding: 0 2em;
+	max-width: 35em;
+	min-width: 320px;
+
+	background: white;
+
+	color: black;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.body-accessible.font-size-120 {
-    font-size: 1.2em;
+.body-accessible.font-family-sans {
+	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
 }
 
-.body-accessible.font-size-140 {
-    font-size: 1.4em;
+.body-accessible.theme-inverted {
+	background: black;
+	color: white;
+}
+
+.body-accessible.theme-colored {
+	background: #DCF2D8;
+	color: #131200;
+}
+
+.body-accessible.font-size-s {
+	font-size: 0.8em;
+}
+
+.body-accessible.font-size-m {
+	font-size: 1em;
+}
+
+.body-accessible.font-size-l {
+	font-size: 1.25em;
+}
+
+.body-accessible.font-size-xl {
+	font-size: 1.5em;
+}
+
+.body-accessible.font-size-xxl {
+	font-size: 2em;
 }
 
 .body-accessible p {
-    line-height: 1.75;
+	line-height: 1.75;
+}
+
+.accessible-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	padding: 10px 0;
+	margin: 0;
+	width: 100%;
+
+	background: white;
+	border-bottom: thin solid black;
+}
+
+.accessible-menu-inner {
+	margin: 0 auto;
+	padding: 0;
+	width: 35em;
 }

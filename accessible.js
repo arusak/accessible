@@ -1,4 +1,8 @@
 (function ($) {
+	var classes = {
+		active: 'accessible-button_active'
+	};
+
 	var fontSizes = ['s', 'm', 'l', 'xl', 'xxl'];
 	var fontSizeIndex = 1;
 	var fontSizeClasses = fontSizes.reduce(function (prev, current) {
@@ -13,17 +17,21 @@
 
 	$(function () {
 		var body = $('body');
-		var btnToggle = $('.accessible-button-toggle');
 		var btnLarger = $('.accessible-button-larger');
 		var btnSmaller = $('.accessible-button-smaller');
 
-		btnToggle.click(function () {
-			body.toggleClass('body-accessible');
-			if (body.hasClass('body-accessible')) {
-				$(this).text('ВЫКЛ.');
-			} else {
-				$(this).text('ВКЛ.')
-			}
+		var btnSans = $('.accessible-button-sans');
+		var btnSerif = $('.accessible-button-serif');
+
+		var btnEnter = $('.accessible-enter');
+		var btnLeave = $('.accessible-leave');
+
+		btnEnter.click(function () {
+			body.addClass('body-accessible');
+		});
+
+		btnLeave.click(function () {
+			body.removeClass('body-accessible');
 		});
 
 		btnLarger.click(function () {
@@ -54,16 +62,22 @@
 		themes.forEach(function (theme) {
 			$('.accessible-button-' + theme).click(function () {
 				body.removeClass(themeClasses).addClass('theme-' + theme);
+				$('.accessible-button-group-theme .accessible-button').removeClass('accessible-button_active');
+				$(this).addClass('accessible-button_active');
 			});
 		});
 
-		$('.accessible-button-sans').click(function () {
+		btnSans.click(function () {
 				body.addClass('font-family-sans');
+				btnSans.addClass(classes.active);
+				btnSerif.removeClass(classes.active);
 			}
 		);
 
-		$('.accessible-button-serif').click(function () {
+		btnSerif.click(function () {
 				body.removeClass('font-family-sans');
+				btnSerif.addClass(classes.active);
+				btnSans.removeClass(classes.active);
 			}
 		);
 	});

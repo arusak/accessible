@@ -1,5 +1,9 @@
+.accessible-menu {
+	display: none;
+}
+
 .body-accessible {
-	margin: 50px auto 0;
+	margin: 70px auto 0;
 	padding: 0 2em;
 	max-width: 35em;
 	min-width: 320px;
@@ -49,7 +53,13 @@
 	line-height: 1.75;
 }
 
-.accessible-menu {
+.body-accessible .accessible-link {
+	display: none;
+}
+
+.body-accessible .accessible-menu {
+	display: block;
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -57,13 +67,71 @@
 	padding: 10px 0;
 	margin: 0;
 	width: 100%;
+	text-align: center;
 
 	background: white;
 	border-bottom: thin solid black;
+
+	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
+	font-size: 18px;
+	line-height: 32px;
+	color:black;
 }
 
 .accessible-menu-inner {
-	margin: 0 auto;
+	display: inline-block;
 	padding: 0;
-	width: 35em;
+}
+
+.accessible-menu .accessible-button-group {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+.accessible-button {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	border: thin solid black;
+	border-radius: 4px;
+
+	text-indent: -9999px;
+}
+
+.accessible-button_active {
+	border: 3px solid #9E8686;
+}
+
+.accessible-button:disabled {
+	opacity: 0.4;
+}
+
+.accessible-button-smaller {
+	background-image: url(img/btn-smaller.png);
+}
+
+.accessible-button-larger {
+	background-image: url(img/btn-larger.png);
+}
+
+.accessible-button-normal {
+	background-image: url(img/btn-normal.png);
+}
+
+.accessible-button-inverted {
+	background-image: url(img/btn-inverted.png);
+}
+
+.accessible-button-colored {
+	background-image: url(img/btn-colored.png);
+}
+.accessible-button-serif {
+	background-image: url(img/btn-serif.png);
+}
+.accessible-button-sans {
+	background-image: url(img/btn-sans.png);
 }

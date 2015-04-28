@@ -7,19 +7,6 @@
 	<link rel="stylesheet" href="accessible.css"/>
 </head>
 <body>
-<div class="accessible-menu">
-<div class="accessible-menu-inner">
-	<button class="accessible-button-toggle">ВКЛ</button>
-	<button class="accessible-button-smaller">&minus;</button>
-	<button class="accessible-button-larger">+</button>
-	<button class="accessible-button-serif">serif</button>
-	<button class="accessible-button-sans">sans</button>
-	<button class="accessible-button-normal">ЧБ</button>
-	<button class="accessible-button-inverted">БЧ</button>
-	<button class="accessible-button-colored">СЗ</button>
-</div>
-</div>
-
 <h1>Растения</h1>
 
 <h2>Покрытосеменные</h2>
@@ -53,6 +40,31 @@
 <p>Семена мелкие, плоские, заострённые у основания, светло- или тёмно-желтые, обычно опушённые, вследствие чего имеют
 	серый оттенок. Физиологически зрелыми становятся уже в зелёных, сформированных плодах. Всхожесть сохраняют 6-8
 	лет.</p>
+
+<p><a href="#" class="accessible-enter">Версия для слабовидящих</a></p>
+
+<div class="accessible-menu">
+	<div class="accessible-menu-inner">
+		<a class="accessible-leave" href="#">В обычный режим</a>
+		<div class="accessible-button-group">
+			<span>Размер шрифта</span>
+			<button class="accessible-button accessible-button-smaller" title="Уменьшить">Уменьшить</button>
+			<button class="accessible-button accessible-button-larger" title="Увеличить">Увеличить</button>
+		</div>
+		<div class="accessible-button-group accessible-button-group-family">
+			<span>Шрифт</span>
+			<button class="accessible-button accessible-button-serif accessible-button_active" title="С засечками">С засечками</button>
+			<button class="accessible-button accessible-button-sans" title="Без засечек">Без засечек</button>
+		</div>
+		<div class="accessible-button-group accessible-button-group-theme">
+			<span>Цвета</span>
+			<button class="accessible-button accessible-button-normal accessible-button_active" title="Чёрный текст на белом фоне">Чёрный текст на белом фоне</button>
+			<button class="accessible-button accessible-button-inverted" title="Белый текст на чёрном фоне">Белый текст на чёрном фоне</button>
+			<button class="accessible-button accessible-button-colored" title="Чёрный текст на цветном фоне">Чёрный текст на цветном фоне</button>
+		</div>
+	</div>
+</div>
+
 
 <script src="accessible.js"></script>
 </body>

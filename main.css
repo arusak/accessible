@@ -1,0 +1,12 @@
+body {
+	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 12px;
+	background: url(img/bg.jpg) repeat 0 0;
+	max-width: 60em;
+	margin: 0 auto;
+	color: #333;
+}
+
+.img-right {
+	float: right;
+}

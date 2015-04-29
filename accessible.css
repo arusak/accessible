@@ -92,6 +92,28 @@
 	text-decoration: underline;
 }
 
+.body-accessible a[href$=\.pdf],
+.body-accessible a[href$=\.doc],
+.body-accessible a[href$=\.docx],
+.body-accessible a[href$=\.xls],
+.body-accessible a[href$=\.xlsx]
+{
+	padding-right: 1em;
+	background-image: url(img/download.svg);
+	background-repeat: no-repeat;
+	background-position: 100% center;
+	background-size: auto 0.8em;
+}
+
+
+.body-accessible a[target=_blank] {
+	padding-right: 1em;
+	background-image: url(img/blank.svg);
+	background-repeat: no-repeat;
+	background-position: 100% center;
+	background-size: auto 0.8em;
+}
+
 .body-accessible .note {
 	border: 0.25em solid;
 	max-width: 40%;
@@ -101,12 +123,26 @@
 }
 
 .body-accessible a:hover {
-	background: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .body-accessible.theme-inverted a:hover {
-	background: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.3);
 }
+
+.body-accessible.theme-inverted a[target=_blank] {
+	background-image: url(img/blank-inverted.svg);
+}
+
+.body-accessible.theme-inverted a[href$=\.pdf],
+.body-accessible.theme-inverted a[href$=\.doc],
+.body-accessible.theme-inverted a[href$=\.docx],
+.body-accessible.theme-inverted a[href$=\.xls],
+.body-accessible.theme-inverted a[href$=\.xlsx]
+{
+	background-image: url(img/download-inverted.svg);
+}
+
 
 .body-accessible .accessible-link {
 	display: none;

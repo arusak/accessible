@@ -57,6 +57,19 @@
 	display: none;
 }
 
+.body-accessible a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.body-accessible a:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.body-accessible.theme-inverted a:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
 .body-accessible .accessible-link {
 	display: none;
 }
@@ -79,7 +92,7 @@
 	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
 	font-size: 18px;
 	line-height: 32px;
-	color:black;
+	color: black;
 }
 
 .accessible-menu-inner {
@@ -133,9 +146,11 @@
 .accessible-button-colored {
 	background-image: url(img/btn-colored.png);
 }
+
 .accessible-button-serif {
 	background-image: url(img/btn-serif.png);
 }
+
 .accessible-button-sans {
 	background-image: url(img/btn-sans.png);
 }

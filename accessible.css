@@ -57,6 +57,21 @@
 	display: none;
 }
 
+.body-accessible ul,
+.body-accessible ol {
+	margin: 1.5em 0;
+}
+
+.body-accessible ul > li,
+.body-accessible ol > li {
+	margin: 0.5em 0;
+}
+
+.body-accessible li > ul,
+.body-accessible li > ol {
+	margin: 0.5em 0;
+}
+
 .body-accessible a {
 	color: inherit;
 	text-decoration: underline;

@@ -14,6 +14,9 @@
 	font-size: 18px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.body-accessible .accessible-enter {
+	display: none;
+}
 
 .body-accessible.font-family-sans {
 	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
@@ -55,6 +58,18 @@
 
 .body-accessible img {
 	display: none;
+}
+
+.body-accessible table {
+	border: thin solid;
+	border-collapse: collapse;
+}
+
+.body-accessible td,
+.body-accessible th {
+	border: 0.12em solid;
+	padding: 0.5em;
+	vertical-align: top;
 }
 
 .body-accessible ul,

@@ -198,7 +198,23 @@
 }
 
 .accessible-button_active {
-	border: 3px solid #9E8686;
+	position: relative;
+}
+
+.accessible-button_active::after {
+	content: '';
+
+	position: absolute;
+	z-index: 1;
+	top: 33px;
+	left: 1px;
+
+	display: inline-block;
+	width: 28px;
+	height: 3px;
+
+	background: rgb(213, 89, 89);
+	border-radius: 50%;
 }
 
 .accessible-button:disabled {

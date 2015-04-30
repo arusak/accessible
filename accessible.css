@@ -197,6 +197,11 @@
 	text-indent: -9999px;
 }
 
+.accessible-button:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 20px #aaa;
+}
+
 .accessible-button_active {
 	position: relative;
 }

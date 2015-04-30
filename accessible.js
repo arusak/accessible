@@ -1,6 +1,7 @@
 (function ($) {
 	var classes = {
-		active: 'accessible-button_active'
+		active: 'accessible-button_active',
+		imgoff: 'accessible-button-images-off'
 	};
 
 	var fontSizes = ['s', 'm', 'l', 'xl', 'xxl'];
@@ -22,6 +23,8 @@
 
 		var btnSans = $('.accessible-button-sans');
 		var btnSerif = $('.accessible-button-serif');
+
+		var btnImages = $('.accessible-button-toggle-images');
 
 		var btnEnter = $('.accessible-enter');
 		var btnLeave = $('.accessible-leave');
@@ -56,6 +59,16 @@
 
 			if (fontSizeIndex === 0) {
 				btnSmaller.prop('disabled', true);
+			}
+		});
+
+		btnImages.click(function () {
+			body.toggleClass('no-images');
+
+			if (body.hasClass('no-images')) {
+				btnImages.addClass(classes.imgoff).text('Показать картинки');
+			} else {
+				btnImages.removeClass(classes.imgoff).text('Убрать картинки');
 			}
 		});
 

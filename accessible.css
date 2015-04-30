@@ -14,12 +14,17 @@
 	font-size: 18px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .body-accessible .accessible-enter {
 	display: none;
 }
 
 .body-accessible.font-family-sans {
 	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
+}
+
+.body-accessible.no-images img {
+	display: none;
 }
 
 .body-accessible.theme-inverted {
@@ -57,7 +62,10 @@
 }
 
 .body-accessible img {
-	display: none;
+	float: right;
+	max-width: 15em;
+	max-height: 15em;
+	margin: 1em 0 1em 0.5em;
 }
 
 .body-accessible table {
@@ -96,15 +104,13 @@
 .body-accessible a[href$=\.doc],
 .body-accessible a[href$=\.docx],
 .body-accessible a[href$=\.xls],
-.body-accessible a[href$=\.xlsx]
-{
+.body-accessible a[href$=\.xlsx] {
 	padding-right: 1em;
 	background-image: url(img/download.svg);
 	background-repeat: no-repeat;
 	background-position: 100% center;
 	background-size: auto 0.8em;
 }
-
 
 .body-accessible a[target=_blank] {
 	padding-right: 1em;
@@ -138,11 +144,9 @@
 .body-accessible.theme-inverted a[href$=\.doc],
 .body-accessible.theme-inverted a[href$=\.docx],
 .body-accessible.theme-inverted a[href$=\.xls],
-.body-accessible.theme-inverted a[href$=\.xlsx]
-{
+.body-accessible.theme-inverted a[href$=\.xlsx] {
 	background-image: url(img/download-inverted.svg);
 }
-
 
 .body-accessible .accessible-link {
 	display: none;
@@ -227,4 +231,22 @@
 
 .accessible-button-sans {
 	background-image: url(img/btn-sans.png);
+}
+
+.accessible-button-group-images {
+	min-width: 9em;
+	text-align: left;
+}
+
+.accessible-button-toggle-images {
+	width: auto;
+	text-indent: 0;
+	padding: 0 0.5em 0 2em;
+	background-color: transparent;
+	background-image: url(img/btn-images-off.png);
+	background-position-x: 2px;
+}
+
+.accessible-button-toggle-images.accessible-button-images-off {
+	background-image: url(img/btn-images-on.png);
 }

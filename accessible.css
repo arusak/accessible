@@ -272,3 +272,8 @@
 .accessible-button-toggle-images.accessible-button-images-off {
 	background-image: url(img/btn-images-on.png);
 }
+
+.accessible-sitemap {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}

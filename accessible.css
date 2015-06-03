@@ -168,8 +168,8 @@
 	border-bottom: thin solid black;
 
 	font-family: 'Trebuchet MS', Helvetica, Verdana, Arial, serif;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 15px;
+	line-height: 30px;
 	color: black;
 }
 
@@ -261,16 +261,16 @@
 }
 
 .accessible-button-toggle-images {
-	width: auto;
-	text-indent: 0;
-	padding: 0 0.5em 0 2em;
-	background-color: transparent;
-	background-image: url(img/btn-images-off.png);
-	background-position-x: 2px;
+	height: 37px;
+	width: 102px;
+	background: transparent url(img/switched-on.png) no-repeat 0 0;
+	border: none;
+	text-indent: -999px;
+	outline: none;
 }
 
 .accessible-button-toggle-images.accessible-button-images-off {
-	background-image: url(img/btn-images-on.png);
+	background-image: url(img/switched-off.png);
 }
 
 .accessible-sitemap {

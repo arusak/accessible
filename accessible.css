@@ -106,17 +106,15 @@
 .body-accessible a[href$=\.xls],
 .body-accessible a[href$=\.xlsx] {
 	padding-right: 1em;
-	background-image: url(img/download.svg);
-	background-repeat: no-repeat;
-	background-position: 100% center;
+
+	background: url(img/download.svg) no-repeat 100% center;
 	background-size: auto 0.8em;
 }
 
 .body-accessible a[target=_blank] {
 	padding-right: 1em;
-	background-image: url(img/blank.svg);
-	background-repeat: no-repeat;
-	background-position: 100% center;
+
+	background: url(img/blank.svg) no-repeat 100% center;
 	background-size: auto 0.8em;
 }
 
@@ -263,12 +261,18 @@
 .accessible-button-toggle-images {
 	height: 32px;
 	width: 79px;
+
 	background: transparent url(img/switch.png) no-repeat -15px 0;
+	-webkit-transition: background-position-x 100ms linear;
 	transition: background-position-x 100ms linear;
+
 	border: none;
 	border-radius: 5px;
-	text-indent: -999px;
 	outline: none;
+
+	text-indent: -999px;
+
+	cursor: pointer;
 }
 
 .accessible-button-toggle-images.accessible-button-images-off {

@@ -261,16 +261,18 @@
 }
 
 .accessible-button-toggle-images {
-	height: 37px;
-	width: 102px;
-	background: transparent url(img/switched-on.png) no-repeat 0 0;
+	height: 32px;
+	width: 79px;
+	background: transparent url(img/switch.png) no-repeat -15px 0;
+	transition: background-position-x 100ms linear;
 	border: none;
+	border-radius: 5px;
 	text-indent: -999px;
 	outline: none;
 }
 
 .accessible-button-toggle-images.accessible-button-images-off {
-	background-image: url(img/switched-off.png);
+	background-position-x: -62px;
 }
 
 .accessible-sitemap {

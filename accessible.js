@@ -13,7 +13,8 @@
 	};
 
 	var fontSizes = ['s', 'm', 'l', 'xl', 'xxl'];
-	var fontSize = 1;
+	var defaultFontSize = 1;
+	var fontSize = defaultFontSize;
 	var fontSizeClasses = fontSizes.reduce(function (prev, current) {
 		return prev + ' font-size-' + current;
 	}, '');
@@ -104,7 +105,7 @@
 			var imagesCookie = getCookie(cookieTypes.images);
 			var fontFamilyCookie = getCookie(cookieTypes.fontFamily);
 
-			setFontSize(+fontSizeCookie);
+			setFontSize(+fontSizeCookie || defaultFontSize);
 			setSans(fontFamilyCookie === 'sans');
 			setTheme(themeCookie);
 			setImages(imagesCookie !== 'false');
@@ -128,7 +129,7 @@
 			setCookie(cookieTypes.fontSize, fontSize);
 		});
 
-		btnImages.click(function () {
+		btnImages.mousedown(function () {
 			setImages(body.hasClass('no-images'));
 			setCookie(cookieTypes.images, !body.hasClass('no-images'));
 		});
